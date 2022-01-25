@@ -1,0 +1,109 @@
+/*CODE WRITTEN BY CODING DESIGN*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font: lighter 1.6rem Helvetica, sans-serif;
+}
+
+main.calculator {
+    width: 25rem;
+    height: 95vh;
+    background-color: rgb(63,67,69);
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: .8rem;
+    box-shadow: 0 .15rem .1rem 0 black;
+}
+
+.brand_name {
+    font-size: 1.6rem;
+    color: white;
+}
+.first_name {
+    font-weight: lighter;
+}
+.last_name {
+    font-weight: bolder;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: .8rem;
+}
+
+.row-second {
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: .8rem;
+}
+
+.row-second button, .row-third button {
+    background-color: rgb(116,114,114);
+    font-size: 1.1rem;
+}
+
+.row-second button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.random, .equals {
+    grid-column: span 2;
+}
+
+.delete, .clear {
+    background-color: rgb(255, 40, 0);
+    font-size: 1.1rem;
+    color: black;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: .8rem;
+
+    background-color: rgb(28,28,28);
+    color: white;
+    font: bolder 1.4rem sans-serif;
+    box-shadow: 0 .1rem .1px 0 black;
+    transition: .2s ease-in;
+}
+
+button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+    transform: scale(.92);
+}
+
+.output_screen {
+    grid-column: 1 / -1;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+    height: 7rem;
+    border: none;
+    outline: none;
+    border-radius: .4rem;
+
+    text-align: right;
+    font: bolder 2.5rem sans-serif;
+    background-color: rgb(188,205,151);
+}
