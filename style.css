@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     height: 100vh;
     display: flex;
@@ -38,6 +39,7 @@ main.calculator {
 .last_name {
     font-weight: bolder;
 }
+
 
 .row {
     width: 100%;
