@@ -1,4 +1,5 @@
-// CODE WRITTEN BY CODING DESIGN
+/*Code was by CODING DESIGN 
+you can checkout YouTube Channel : https://www.youtube.com/c/CodingDesign2*/
 
 let output_screen = document.querySelector('.output_screen');
 const equals = document.querySelector('.equals');
